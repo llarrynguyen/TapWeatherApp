@@ -7,14 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		227951717CDFBC70D21D4F2C /* Pods_TapcartWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6270796B83F42F7B8A8FB37 /* Pods_TapcartWeather.framework */; };
+		DC2F18402202507800730572 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F183F2202507800730572 /* UIImage+Extension.swift */; };
+		DC2F18422202691A00730572 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F18412202691A00730572 /* API.swift */; };
 		DC681A3D22024C040063D0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681A3C22024C040063D0C0 /* AppDelegate.swift */; };
 		DC681A3F22024C040063D0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681A3E22024C040063D0C0 /* ViewController.swift */; };
 		DC681A4222024C040063D0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC681A4022024C040063D0C0 /* Main.storyboard */; };
 		DC681A4422024C050063D0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC681A4322024C050063D0C0 /* Assets.xcassets */; };
 		DC681A4722024C050063D0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC681A4522024C050063D0C0 /* LaunchScreen.storyboard */; };
+		DC97893F2203906A000B2D0A /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97893E2203906A000B2D0A /* Double+Extension.swift */; };
+		DC97894422039121000B2D0A /* Forcecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97894322039121000B2D0A /* Forcecast.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3600445F8600F757B8A240A8 /* Pods-TapcartWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapcartWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapcartWeather/Pods-TapcartWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		D6270796B83F42F7B8A8FB37 /* Pods_TapcartWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapcartWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC2F183F2202507800730572 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		DC2F18412202691A00730572 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		DC681A3922024C040063D0C0 /* TapcartWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapcartWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC681A3C22024C040063D0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC681A3E22024C040063D0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +31,9 @@
 		DC681A4322024C050063D0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC681A4622024C050063D0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC681A4822024C050063D0C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC97893E2203906A000B2D0A /* Double+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Extension.swift"; sourceTree = "<group>"; };
+		DC97894322039121000B2D0A /* Forcecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forcecast.swift; sourceTree = "<group>"; };
+		EE577EC94983F8C465F0ACB9 /* Pods-TapcartWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapcartWeather.release.xcconfig"; path = "Pods/Target Support Files/Pods-TapcartWeather/Pods-TapcartWeather.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				227951717CDFBC70D21D4F2C /* Pods_TapcartWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5A1EE15C7768C221519AB3A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3600445F8600F757B8A240A8 /* Pods-TapcartWeather.debug.xcconfig */,
+				EE577EC94983F8C465F0ACB9 /* Pods-TapcartWeather.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DC681A3022024C040063D0C0 = {
 			isa = PBXGroup;
 			children = (
 				DC681A3B22024C040063D0C0 /* TapcartWeather */,
 				DC681A3A22024C040063D0C0 /* Products */,
+				A5A1EE15C7768C221519AB3A /* Pods */,
+				F2F46C968777FDB534738097 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +79,49 @@
 			isa = PBXGroup;
 			children = (
 				DC681A3C22024C040063D0C0 /* AppDelegate.swift */,
-				DC681A3E22024C040063D0C0 /* ViewController.swift */,
-				DC681A4022024C040063D0C0 /* Main.storyboard */,
 				DC681A4322024C050063D0C0 /* Assets.xcassets */,
-				DC681A4522024C050063D0C0 /* LaunchScreen.storyboard */,
 				DC681A4822024C050063D0C0 /* Info.plist */,
+				DC681A4522024C050063D0C0 /* LaunchScreen.storyboard */,
+				DC681A4022024C040063D0C0 /* Main.storyboard */,
+				DC681A3E22024C040063D0C0 /* ViewController.swift */,
+				DC97894022039073000B2D0A /* Extensions */,
+				DC97894222039108000B2D0A /* Models */,
+				DC9789412203907B000B2D0A /* Networking */,
 			);
 			path = TapcartWeather;
+			sourceTree = "<group>";
+		};
+		DC97894022039073000B2D0A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC2F183F2202507800730572 /* UIImage+Extension.swift */,
+				DC97893E2203906A000B2D0A /* Double+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC9789412203907B000B2D0A /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DC2F18412202691A00730572 /* API.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		DC97894222039108000B2D0A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DC97894322039121000B2D0A /* Forcecast.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F2F46C968777FDB534738097 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6270796B83F42F7B8A8FB37 /* Pods_TapcartWeather.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +131,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC681A4B22024C050063D0C0 /* Build configuration list for PBXNativeTarget "TapcartWeather" */;
 			buildPhases = (
+				14E958D1DA0850CD989F7E3A /* [CP] Check Pods Manifest.lock */,
 				DC681A3522024C040063D0C0 /* Sources */,
 				DC681A3622024C040063D0C0 /* Frameworks */,
 				DC681A3722024C040063D0C0 /* Resources */,
@@ -130,12 +191,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		14E958D1DA0850CD989F7E3A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TapcartWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DC681A3522024C040063D0C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC2F18402202507800730572 /* UIImage+Extension.swift in Sources */,
+				DC2F18422202691A00730572 /* API.swift in Sources */,
 				DC681A3F22024C040063D0C0 /* ViewController.swift in Sources */,
+				DC97893F2203906A000B2D0A /* Double+Extension.swift in Sources */,
+				DC97894422039121000B2D0A /* Forcecast.swift in Sources */,
 				DC681A3D22024C040063D0C0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +366,7 @@
 		};
 		DC681A4C22024C050063D0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3600445F8600F757B8A240A8 /* Pods-TapcartWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +385,7 @@
 		};
 		DC681A4D22024C050063D0C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE577EC94983F8C465F0ACB9 /* Pods-TapcartWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

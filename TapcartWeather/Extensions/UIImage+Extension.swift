@@ -10,7 +10,7 @@ import UIKit
 
 extension UIImage {
     func image(forWeather weather: String) -> UIImage {
-        return UIImage(named: weather) ?? UIImage(named: "cloud-drop")!
+        return UIImage(named: weather) ?? UIImage(named: "Clear")!
     }
 }
 

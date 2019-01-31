@@ -12,4 +12,9 @@ extension Double {
     var formatAsDegree: String {
         return String(format: "%.0f°", self)
     }
+    
+    var toFahrenheit: Double {
+        return (self - 273.15) * (9/5) + 32.0
+    }
 }
+

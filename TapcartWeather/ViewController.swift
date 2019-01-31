@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var forecast: [Forecast] = Forecast.fiveDayForecast
 
     override func viewDidLoad() {
         super.viewDidLoad()
