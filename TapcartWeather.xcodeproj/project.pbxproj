@@ -8,10 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		227951717CDFBC70D21D4F2C /* Pods_TapcartWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6270796B83F42F7B8A8FB37 /* Pods_TapcartWeather.framework */; };
+		D16917192388848200C153D6 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16917182388848200C153D6 /* WeatherViewModel.swift */; };
+		D169171B2388849400C153D6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D169171A2388849400C153D6 /* Weather.swift */; };
+		D169171F23888EB300C153D6 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D169171D23888EB300C153D6 /* WeatherCell.swift */; };
+		D169172023888EB300C153D6 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D169171E23888EB300C153D6 /* WeatherCell.xib */; };
+		D1691723238898FE00C153D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1691722238898FE00C153D6 /* Constants.swift */; };
+		D169172B2388A8E700C153D6 /* TapcartWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D169172A2388A8E700C153D6 /* TapcartWeatherTests.swift */; };
+		D16917322388A90900C153D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1691722238898FE00C153D6 /* Constants.swift */; };
+		D16917342388A90900C153D6 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196D51923887E7000F1A0B9 /* EndpointProtocol.swift */; };
+		D16917352388A90900C153D6 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196D51B23887F1500F1A0B9 /* WeatherClient.swift */; };
+		D16917362388A90900C153D6 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196D51D238880E100F1A0B9 /* APIClient.swift */; };
+		D16917372388A90900C153D6 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F183F2202507800730572 /* UIImage+Extension.swift */; };
+		D16917382388A90900C153D6 /* Double+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97893E2203906A000B2D0A /* Double+Extension.swift */; };
+		D16917392388A90900C153D6 /* Forcecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97894322039121000B2D0A /* Forcecast.swift */; };
+		D169173A2388A90900C153D6 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D169171A2388849400C153D6 /* Weather.swift */; };
+		D169173B2388A90900C153D6 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681A3E22024C040063D0C0 /* WeatherViewController.swift */; };
+		D169173C2388A90900C153D6 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D169171D23888EB300C153D6 /* WeatherCell.swift */; };
+		D169173D2388A90900C153D6 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16917182388848200C153D6 /* WeatherViewModel.swift */; };
+		D169173E2388A90900C153D6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681A3C22024C040063D0C0 /* AppDelegate.swift */; };
+		D196D51A23887E7000F1A0B9 /* EndpointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196D51923887E7000F1A0B9 /* EndpointProtocol.swift */; };
+		D196D51C23887F1500F1A0B9 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196D51B23887F1500F1A0B9 /* WeatherClient.swift */; };
+		D196D51E238880E100F1A0B9 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D196D51D238880E100F1A0B9 /* APIClient.swift */; };
 		DC2F18402202507800730572 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F183F2202507800730572 /* UIImage+Extension.swift */; };
-		DC2F18422202691A00730572 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2F18412202691A00730572 /* API.swift */; };
 		DC681A3D22024C040063D0C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681A3C22024C040063D0C0 /* AppDelegate.swift */; };
-		DC681A3F22024C040063D0C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681A3E22024C040063D0C0 /* ViewController.swift */; };
+		DC681A3F22024C040063D0C0 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC681A3E22024C040063D0C0 /* WeatherViewController.swift */; };
 		DC681A4222024C040063D0C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC681A4022024C040063D0C0 /* Main.storyboard */; };
 		DC681A4422024C050063D0C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC681A4322024C050063D0C0 /* Assets.xcassets */; };
 		DC681A4722024C050063D0C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC681A4522024C050063D0C0 /* LaunchScreen.storyboard */; };
@@ -19,14 +39,34 @@
 		DC97894422039121000B2D0A /* Forcecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC97894322039121000B2D0A /* Forcecast.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D169172D2388A8E700C153D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC681A3122024C040063D0C0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC681A3822024C040063D0C0;
+			remoteInfo = TapcartWeather;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3600445F8600F757B8A240A8 /* Pods-TapcartWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapcartWeather.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapcartWeather/Pods-TapcartWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		D16917182388848200C153D6 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		D169171A2388849400C153D6 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		D169171D23888EB300C153D6 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		D169171E23888EB300C153D6 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
+		D1691722238898FE00C153D6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D16917282388A8E700C153D6 /* TapcartWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapcartWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D169172A2388A8E700C153D6 /* TapcartWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapcartWeatherTests.swift; sourceTree = "<group>"; };
+		D169172C2388A8E700C153D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D196D51923887E7000F1A0B9 /* EndpointProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProtocol.swift; sourceTree = "<group>"; };
+		D196D51B23887F1500F1A0B9 /* WeatherClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
+		D196D51D238880E100F1A0B9 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		D6270796B83F42F7B8A8FB37 /* Pods_TapcartWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapcartWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC2F183F2202507800730572 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
-		DC2F18412202691A00730572 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		DC681A3922024C040063D0C0 /* TapcartWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapcartWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC681A3C22024C040063D0C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DC681A3E22024C040063D0C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC681A3E22024C040063D0C0 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		DC681A4122024C040063D0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DC681A4322024C050063D0C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC681A4622024C050063D0C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -37,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D16917252388A8E700C153D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC681A3622024C040063D0C0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,10 +104,46 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D16917172388847200C153D6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D16917182388848200C153D6 /* WeatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		D169171C23888EA200C153D6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DC681A3E22024C040063D0C0 /* WeatherViewController.swift */,
+				D169171D23888EB300C153D6 /* WeatherCell.swift */,
+				D169171E23888EB300C153D6 /* WeatherCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D1691721238898E800C153D6 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D1691722238898FE00C153D6 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		D16917292388A8E700C153D6 /* TapcartWeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				D169172A2388A8E700C153D6 /* TapcartWeatherTests.swift */,
+				D169172C2388A8E700C153D6 /* Info.plist */,
+			);
+			path = TapcartWeatherTests;
+			sourceTree = "<group>";
+		};
 		DC681A3022024C040063D0C0 = {
 			isa = PBXGroup;
 			children = (
 				DC681A3B22024C040063D0C0 /* TapcartWeather */,
+				D16917292388A8E700C153D6 /* TapcartWeatherTests */,
 				DC681A3A22024C040063D0C0 /* Products */,
 				A5A1EE15C7768C221519AB3A /* Pods */,
 				F2F46C968777FDB534738097 /* Frameworks */,
@@ -71,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				DC681A3922024C040063D0C0 /* TapcartWeather.app */,
+				D16917282388A8E700C153D6 /* TapcartWeatherTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,15 +162,17 @@
 		DC681A3B22024C040063D0C0 /* TapcartWeather */ = {
 			isa = PBXGroup;
 			children = (
+				D1691721238898E800C153D6 /* Constants */,
+				DC9789412203907B000B2D0A /* Networking */,
+				DC97894022039073000B2D0A /* Extensions */,
+				DC97894222039108000B2D0A /* Models */,
+				D169171C23888EA200C153D6 /* Views */,
+				D16917172388847200C153D6 /* ViewModel */,
 				DC681A3C22024C040063D0C0 /* AppDelegate.swift */,
 				DC681A4322024C050063D0C0 /* Assets.xcassets */,
 				DC681A4822024C050063D0C0 /* Info.plist */,
 				DC681A4522024C050063D0C0 /* LaunchScreen.storyboard */,
 				DC681A4022024C040063D0C0 /* Main.storyboard */,
-				DC681A3E22024C040063D0C0 /* ViewController.swift */,
-				DC97894022039073000B2D0A /* Extensions */,
-				DC97894222039108000B2D0A /* Models */,
-				DC9789412203907B000B2D0A /* Networking */,
 			);
 			path = TapcartWeather;
 			sourceTree = "<group>";
@@ -103,7 +189,9 @@
 		DC9789412203907B000B2D0A /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				DC2F18412202691A00730572 /* API.swift */,
+				D196D51923887E7000F1A0B9 /* EndpointProtocol.swift */,
+				D196D51B23887F1500F1A0B9 /* WeatherClient.swift */,
+				D196D51D238880E100F1A0B9 /* APIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -112,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				DC97894322039121000B2D0A /* Forcecast.swift */,
+				D169171A2388849400C153D6 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -127,6 +216,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D16917272388A8E700C153D6 /* TapcartWeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D169172F2388A8E700C153D6 /* Build configuration list for PBXNativeTarget "TapcartWeatherTests" */;
+			buildPhases = (
+				D16917242388A8E700C153D6 /* Sources */,
+				D16917252388A8E700C153D6 /* Frameworks */,
+				D16917262388A8E700C153D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D169172E2388A8E700C153D6 /* PBXTargetDependency */,
+			);
+			name = TapcartWeatherTests;
+			productName = TapcartWeatherTests;
+			productReference = D16917282388A8E700C153D6 /* TapcartWeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		DC681A3822024C040063D0C0 /* TapcartWeather */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DC681A4B22024C050063D0C0 /* Build configuration list for PBXNativeTarget "TapcartWeather" */;
@@ -151,10 +258,14 @@
 		DC681A3122024C040063D0C0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = jhall;
 				TargetAttributes = {
+					D16917272388A8E700C153D6 = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = DC681A3822024C040063D0C0;
+					};
 					DC681A3822024C040063D0C0 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -174,15 +285,24 @@
 			projectRoot = "";
 			targets = (
 				DC681A3822024C040063D0C0 /* TapcartWeather */,
+				D16917272388A8E700C153D6 /* TapcartWeatherTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D16917262388A8E700C153D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC681A3722024C040063D0C0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D169172023888EB300C153D6 /* WeatherCell.xib in Resources */,
 				DC681A4722024C050063D0C0 /* LaunchScreen.storyboard in Resources */,
 				DC681A4422024C050063D0C0 /* Assets.xcassets in Resources */,
 				DC681A4222024C040063D0C0 /* Main.storyboard in Resources */,
@@ -213,20 +333,54 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D16917242388A8E700C153D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D16917352388A90900C153D6 /* WeatherClient.swift in Sources */,
+				D169173D2388A90900C153D6 /* WeatherViewModel.swift in Sources */,
+				D16917372388A90900C153D6 /* UIImage+Extension.swift in Sources */,
+				D16917342388A90900C153D6 /* EndpointProtocol.swift in Sources */,
+				D169173E2388A90900C153D6 /* AppDelegate.swift in Sources */,
+				D169172B2388A8E700C153D6 /* TapcartWeatherTests.swift in Sources */,
+				D169173A2388A90900C153D6 /* Weather.swift in Sources */,
+				D16917392388A90900C153D6 /* Forcecast.swift in Sources */,
+				D16917382388A90900C153D6 /* Double+Extension.swift in Sources */,
+				D169173C2388A90900C153D6 /* WeatherCell.swift in Sources */,
+				D16917322388A90900C153D6 /* Constants.swift in Sources */,
+				D16917362388A90900C153D6 /* APIClient.swift in Sources */,
+				D169173B2388A90900C153D6 /* WeatherViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DC681A3522024C040063D0C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D16917192388848200C153D6 /* WeatherViewModel.swift in Sources */,
 				DC2F18402202507800730572 /* UIImage+Extension.swift in Sources */,
-				DC2F18422202691A00730572 /* API.swift in Sources */,
-				DC681A3F22024C040063D0C0 /* ViewController.swift in Sources */,
+				D169171B2388849400C153D6 /* Weather.swift in Sources */,
+				DC681A3F22024C040063D0C0 /* WeatherViewController.swift in Sources */,
 				DC97893F2203906A000B2D0A /* Double+Extension.swift in Sources */,
 				DC97894422039121000B2D0A /* Forcecast.swift in Sources */,
+				D1691723238898FE00C153D6 /* Constants.swift in Sources */,
+				D196D51C23887F1500F1A0B9 /* WeatherClient.swift in Sources */,
+				D169171F23888EB300C153D6 /* WeatherCell.swift in Sources */,
 				DC681A3D22024C040063D0C0 /* AppDelegate.swift in Sources */,
+				D196D51A23887E7000F1A0B9 /* EndpointProtocol.swift in Sources */,
+				D196D51E238880E100F1A0B9 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D169172E2388A8E700C153D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC681A3822024C040063D0C0 /* TapcartWeather */;
+			targetProxy = D169172D2388A8E700C153D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DC681A4022024C040063D0C0 /* Main.storyboard */ = {
@@ -248,6 +402,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D16917302388A8E700C153D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8K5LFSE6P;
+				INFOPLIST_FILE = TapcartWeatherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = affinne.TapcartWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapcartWeather.app/TapcartWeather";
+			};
+			name = Debug;
+		};
+		D16917312388A8E700C153D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q8K5LFSE6P;
+				INFOPLIST_FILE = TapcartWeatherTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = affinne.TapcartWeatherTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TapcartWeather.app/TapcartWeather";
+			};
+			name = Release;
+		};
 		DC681A4922024C050063D0C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -370,13 +566,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PBVUXBPDEA;
+				DEVELOPMENT_TEAM = YYHPQDA848;
 				INFOPLIST_FILE = TapcartWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jhall.TapcartWeather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blah.TapcartWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -389,13 +585,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PBVUXBPDEA;
+				DEVELOPMENT_TEAM = YYHPQDA848;
 				INFOPLIST_FILE = TapcartWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jhall.TapcartWeather;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blah.TapcartWeather;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -405,6 +601,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D169172F2388A8E700C153D6 /* Build configuration list for PBXNativeTarget "TapcartWeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D16917302388A8E700C153D6 /* Debug */,
+				D16917312388A8E700C153D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DC681A3422024C040063D0C0 /* Build configuration list for PBXProject "TapcartWeather" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

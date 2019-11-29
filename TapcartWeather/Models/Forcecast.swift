@@ -8,19 +8,47 @@
 
 import Foundation
 
+struct ForecastResult: Decodable {
+    let list: [ForecastDayResult]
+}
+
+struct ForecastDayResult: Decodable {
+    var weather: [WeatherType]
+    var main: WeatherMain
+    var dtTxt: String
+}
+
+extension ForecastDayResult {
+    var strimDtText: String {
+        return String(dtTxt.dropLast(dtTxt.count - 10))
+    }
+}
+
 struct Forecast {
     var dayOfTheWeek:   String
     var minTemperature: Double
     var maxTemperature: Double
     var imageName:      String
+    
+    init(forecastDayResult: ForecastDayResult) {
+        let date = Forecast.dateFormatter.date(from: forecastDayResult.strimDtText) ?? Date()
+        dayOfTheWeek = Forecast.dayOfWeekFormatter.string(from: date)
+        minTemperature = forecastDayResult.main.tempMin
+        maxTemperature = forecastDayResult.main.tempMax
+        imageName = forecastDayResult.weather.first?.main ?? ""
+    }
 }
 
 extension Forecast {
-    static let fiveDayForecast: [Forecast] = [
-        Forecast(dayOfTheWeek: "Friday", minTemperature: 55.0, maxTemperature: 63.0, imageName: "Clouds"),
-        Forecast(dayOfTheWeek: "Saturday", minTemperature: 53.0, maxTemperature: 67.0, imageName: "Drizzle"),
-        Forecast(dayOfTheWeek: "Sunday", minTemperature: 55.0, maxTemperature: 63.0, imageName: "Drizzle"),
-        Forecast(dayOfTheWeek: "Monday", minTemperature: 64.0, maxTemperature: 70.0, imageName: "Sunny"),
-        Forecast(dayOfTheWeek: "Tuesday", minTemperature: 59.0, maxTemperature: 68.0, imageName: "Rain")
-    ]
+    static var dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        return formatter
+    }()
+
+    static var dayOfWeekFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EEEE"
+        return formatter
+    }()
 }
